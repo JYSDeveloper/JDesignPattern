@@ -4,7 +4,7 @@ public class ElasticSearchAdapter extends ElasticSearchAdaptee implements Target
 
     @Override
     public void SelectDateFormDB(String queryParam) {
-        //直接调用了Elastic Search引擎的查询方法
+        //转换的逻辑，比如说定义一个ES 查询model,就可以在这里作为参数传递了
         this.SelectDateByFilter(queryParam);
     }
 }
